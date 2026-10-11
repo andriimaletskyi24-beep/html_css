@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 22px;
+        }
+        #nazad{
+            font-style: italic;
+        }
+        h2{
+            text-align: center;
+        }
+        ul li:nth-child(odd){
+            background-color: gray;
+        }
+        ol li:nth-child(3) ol li:nth-child(5){
+            cursor: pointer;
+        }
+        ol li:nth-child(4){
+            background-color: navy;
+        }
+    </style>
 </head>
 <body>
     <h1>Сьогодення Малецького Андрія Ярославовича</h1>
-    <a href="index.html">Назад на головну</a>
+    <a id="nazad" href="index.html">Назад на головну</a>
+    <article>
     <h2>Мій типовий список покупок:</h2>
     <ul>
     <li>Молочно-шоколадний батон "Рошен" з начинкою крем-брюле</li>
@@ -29,6 +51,7 @@
         <li>Приправа "До картоплі "американська""</li>
     </ul></li>
     </ul>
+    </article>
 
     <h2>Мій улюблений десерт "негр в піні"</h2>
     <ol>
