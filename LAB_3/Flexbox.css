@@ -1,0 +1,67 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    display: block;
+    width: 40%;
+    height: 20%;
+    background-color: orange;
+    margin-top: 0%;
+    float: right;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+#cap2{
+    background-color: aquamarine;
+}
+#cap3{
+    background-color: maroon;
+    color: white;
+}
+p{
+    clear: both;
+    font-size: 140%;
+}
+
+@media(min-width: 993px){
+    section{
+    display: flex;
+}
+article{
+     background-color: lightsteelblue;
+    border: 3px solid black;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+}
+@media(max-width: 992px) and (min-width: 769px){
+    article {
+  background-color: lightsteelblue;
+  border: 3px solid black;
+  margin: 10px;
+}
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #article1, #article2 {
+  flex: 1 1 40%;
+}
+#article3 {
+  flex: 1 1 90%;
+}
+
+}
+@media (max-width: 768px){
+    section{
+    display: flex;
+    flex-direction: column;
+    }
+    article{
+    background-color: lightsteelblue;
+    border: 3px solid black;
+    margin-bottom: 30px;
+}
+}

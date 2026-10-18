@@ -1,0 +1,103 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    display: block;
+    width: 40%;
+    height: 20%;
+    background-color: orange;
+    margin-top: 0%;
+    float: right;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+#cap2{
+    background-color: aquamarine;
+}
+#cap3{
+    background-color: maroon;
+    color: white;
+}
+p{
+    clear: both;
+    font-size: 140%;
+}
+article{
+     background-color: lightsteelblue;
+    border: 3px solid black;
+}
+ section{
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr 100px 1fr;
+        grid-template-rows: 280px 20px 280px;
+    }
+    
+@media(min-width: 993px){
+    #article1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #article2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #article3{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+@media(max-width: 992px) and (min-width: 769px){
+    #article1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #article2{
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #article3{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    h2{
+        width: 25%;
+    }
+}
+@media (max-width: 768px){
+    section{
+        display: grid;
+        grid-template-columns: 100px 1fr 100px;
+        grid-template-rows: 250px 20px 250px 20px 250px;
+    }
+    #article1{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #article2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #article3{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+}
