@@ -1,20 +1,21 @@
+body{
+    margin: 0%;
+}
 h1{
     text-align: center;
 }
 h2{
     text-align: center;
     display: block;
-    width: 40%;
-    height: 20%;
+    width: 120px;
+    height: 40px;
     background-color: orange;
     margin-top: 0%;
     float: right;
     border-left: 3px solid black;
     border-bottom: 3px solid black;
 }
-#article3{
-    margin-right: 0px;
-}
+
 #cap2{
     background-color: aquamarine;
 }
@@ -23,50 +24,57 @@ h2{
     color: white;
 }
 p{
-    clear: both;
-    font-size: 140%;
-}
-
-@media(min-width: 993px){
-    article{
-    width: 25%;
-    height: 250px;
     display: block;
+    clear: both;
+    font-size: 120%;
+    margin-left: 22.4px;
+    margin-right: 22.4px;
+}
+@media(min-width: 993px){
+    div{
+        width: 33.33%;
+        float: left;
+        margin-bottom: 30px;
+    }
+    article{
+     display: block;
+    width: 80%;
+    height: 230px;
     background-color: lightsteelblue;
     border: 3px solid black;
-    float: left;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 }
 @media(max-width: 992px) and (min-width: 769px){
+    div{
+    width: 50%;
+    float: left;
+    }
     article{
-    width: 45%;
-    height: 240px;
     display: block;
+    height: 220px;
     background-color: lightsteelblue;
     border: 3px solid black;
-    float: left;
-    margin-right: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 50px;
 }
-    #article2{
-        float: right;
-        margin-right: 0px;
-    }
-    #article3{
+    #div3{
     width: 100%;
     }
-    #cap3{
-        width: 20%;
+    #article3{
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 150px;
     }
-
 }
 @media (max-width: 768px){
     article{
-    margin-both: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
     width: 90%;
-    height: 150px;
+    height: 170px;
     display: block;
     background-color: lightsteelblue;
     border: 3px solid black;
