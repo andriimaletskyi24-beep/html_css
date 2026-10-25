@@ -1,0 +1,108 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    display: block;
+    width: 120px;
+    height: 40px;
+    background-color: orange;
+    margin-top: 0%;
+    float: right;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+#cap2{
+    background-color: aquamarine;
+}
+#cap3{
+    background-color: maroon;
+    color: white;
+}
+p{
+    display: block;
+    clear: both;
+    margin-left: 22.4px;
+    margin-right: 22.4px;
+}
+article{
+     background-color: lightsteelblue;
+    border: 3px solid black;
+}
+    
+@media(min-width: 993px){
+    section{
+        display: grid;
+        grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px;
+        grid-template-rows: 180px 20px;
+
+    }
+    #article1{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #article2{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #article3{
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+@media(max-width: 992px) and (min-width: 769px){
+    section{
+        display: grid;
+        grid-template-columns: 20px 1fr 20px 1fr 20px;
+        grid-template-rows: 170px 20px 120px;
+    }
+    #article1{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #article2{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #article3{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+@media (max-width: 768px){
+    section{
+        display: grid;
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-rows: 170px 20px 170px 20px 170px;
+    }
+    #article1{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #article2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #article3{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+}
